@@ -82,7 +82,6 @@ function search() {
 
   // Jika tidak ditemukan murid dengan nama yang sesuai
   alert("Tidak dapat menemukan: " + input);
-  clear();
 }
 
 // cleaner
