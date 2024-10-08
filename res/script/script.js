@@ -46,7 +46,7 @@ function search() {
     return;
   }
   
-  if (input === "demon" || inut === "demon function") {
+  if (input === "demon" || input === "demon function") {
     clear();
     var o = 3;
     alert(input + " will be start in : " + o);
@@ -76,12 +76,15 @@ function search() {
     // Jika nama murid ditemukan, scroll ke kartu murid yang sesuai
     if (muridName.includes(input)) {
       muridCards[i].scrollIntoView({ behavior: "smooth", block: "start" });
+      clear();
       return;
     }
   }
 
   // Jika tidak ditemukan murid dengan nama yang sesuai
   alert("Tidak dapat menemukan: " + input);
+  clear();
+  return;
 }
 
 // cleaner
