@@ -76,7 +76,6 @@ function search() {
     // Jika nama murid ditemukan, scroll ke kartu murid yang sesuai
     if (muridName.includes(input)) {
       muridCards[i].scrollIntoView({ behavior: "smooth", block: "start" });
-      clear();
       return;
     }
   }
